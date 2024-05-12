@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <div className="counter">
-        <button>-</button>
+        <button onClick={() => dispatch(counterActions.decrement())}>-</button>
         <span>{counter}</span>
         <button onClick={() => dispatch(counterActions.increment())}>+</button>
       </div>

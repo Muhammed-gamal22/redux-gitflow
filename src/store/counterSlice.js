@@ -6,8 +6,11 @@ const counterSlice = createSlice({
     counter: 0,
   },
   reducers: {
-    increment: (state, action) => {
+    increment: (state) => {
       state.counter++;
+    },
+    decrement: (state) => {
+      state.counter--;
     },
   },
 });
